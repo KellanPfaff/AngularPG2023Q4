@@ -16,7 +16,9 @@ export class LeaderboardComponent {
   scoreService: ScoreService = inject(ScoreService);
   
   constructor() {
-    this.scoreList = this.scoreService.getAllScores();
+    this.scoreService.getAllScores().then((scoreList: Score[]) => {
+      this.scoreList = scoreList;
+    })
   }
 
 }
