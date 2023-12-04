@@ -5,11 +5,11 @@ export const routes: Routes = [
     {
         path: '',
         component: HomeComponent,
-        title: 'Leaderboard Home'
+        title: 'Leaderboard'
     },
     {
         path: '**',
         component: HomeComponent,
-        title: 'Leaderboard Home'
+        title: 'Leaderboard'
     }
 ];
